@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Healthy Recipes</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+text-align:center;
+background:#f4f6f9;
+padding:40px;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+background:#4CAF50;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#3e8e41;
+}
+
+#recipes{
+display:none;
+margin-top:30px;
+}
+
+.recipe{
+background:white;
+padding:20px;
+margin:20px auto;
+width:420px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.recipe img{
+width:100%;
+border-radius:10px;
+}
+
+.ingredients{
+text-align:left;
+margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Healthy Recipe Ideas</h1>
+
+<button onclick="showRecipes()">View Recipes</button>
+
+<div id="recipes">
+
+<!-- Recipe 1 -->
+
+<div class="recipe">
+
+<img src="bowl.webp" alt="Smoothie Bowl">
+
+<h2>Perfect Breakfast Smoothie Bowl</h2>
+
+<p>Perfect breakfast to fuel your morning with vitamins and protein.</p>
+
+<div class="ingredients">
+
+<strong>Ingredients:</strong>
+
+<ul>
+<li>1 frozen banana</li>
+<li>1 cup berries</li>
+<li>1/2 cup yogurt</li>
+<li>Handful of spinach</li>
+<li>Toppings: granola, seeds, fruit</li>
+</ul>
+
+</div>
+
+</div>
+
+<!-- Recipe 2 -->
+
+<div class="recipe">
+
+<img src="pizza.png" alt="Healthy Pizza">
+
+<h2>Healthy Veggie Pita Pizza</h2>
+
+<p>2 servings – Pizza night doesn't have to be unhealthy! Load up on veggies.</p>
+
+<div class="ingredients">
+
+<strong>Ingredients:</strong>
+
+<ul>
+<li>Whole wheat pita bread</li>
+<li>Tomato sauce</li>
+<li>Mozzarella cheese</li>
+<li>Veggies of choice</li>
+<li>Chicken or peppers</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function showRecipes(){
+document.getElementById("recipes").style.display="block";
+}
+
+</script>
+
+</body>
+</html>

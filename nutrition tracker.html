@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nutrition Tracker</title>
+
+<style>
+body{
+font-family: Arial;
+background:#f8e803;
+text-align:center;
+padding:40px;
+}
+
+.container{
+background:rgb(243, 139, 4);
+padding:25px;
+width:400px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+input{
+width:90%;
+padding:10px;
+margin:5px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:10px 20px;
+margin-top:10px;
+background:#4CAF50;
+color:rgb(189, 20, 20);
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#45a049;
+}
+
+table{
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+}
+
+th, td{
+border-bottom:1px solid #ddd;
+padding:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Nutrition Tracker</h2>
+
+<input id="food" placeholder="Food Name">
+
+<input id="calories" type="number" placeholder="Calories">
+
+<input id="protein" type="number" placeholder="Protein (g)">
+
+<input id="carbs" type="number" placeholder="Carbs (g)">
+
+<input id="fat" type="number" placeholder="Fat (g)">
+
+<br>
+
+<button onclick="addFood()">Add Food</button>
+
+<table>
+
+<thead>
+<tr>
+<th>Food</th>
+<th>Calories</th>
+<th>Protein</th>
+<th>Carbs</th>
+<th>Fat</th>
+</tr>
+</thead>
+
+<tbody id="foodTable"></tbody>
+
+</table>
+
+<h3>Daily Total</h3>
+
+<p id="totals">
+Calories: 0 | Protein: 0g | Carbs: 0g | Fat: 0g
+</p>
+
+</div>
+
+<script>
+
+let totalCalories = 0
+let totalProtein = 0
+let totalCarbs = 0
+let totalFat = 0
+
+function addFood(){
+
+let food = document.getElementById("food").value
+let calories = Number(document.getElementById("calories").value)
+let protein = Number(document.getElementById("protein").value)
+let carbs = Number(document.getElementById("carbs").value)
+let fat = Number(document.getElementById("fat").value)
+
+let table = document.getElementById("foodTable")
+
+let row = table.insertRow()
+
+row.insertCell(0).innerText = food
+row.insertCell(1).innerText = calories
+row.insertCell(2).innerText = protein
+row.insertCell(3).innerText = carbs
+row.insertCell(4).innerText = fat
+
+totalCalories += calories
+totalProtein += protein
+totalCarbs += carbs
+totalFat += fat
+
+document.getElementById("totals").innerText =
+"Calories: " + totalCalories +
+" | Protein: " + totalProtein + "g" +
+" | Carbs: " + totalCarbs + "g" +
+" | Fat: " + totalFat + "g"
+
+}
+
+</script>
+
+</body>
+</html>
