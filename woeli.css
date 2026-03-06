@@ -1,0 +1,121 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      
+      background-image: url(6767676.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white; 
+    }
+
+    
+    h1 {
+      color: #fff;
+      text-shadow: 2px 2px 4px #000; 
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: rgba(76, 175, 80, 0.8); 
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: rgba(69, 160, 73, 0.9);
+    }
+
+    .labels {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .label {
+      width: 80px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: rgba(200, 200, 200, 0.6);
+      color: white;
+      font-weight: bold;
+    }
+
+    .active {
+      background-color: rgba(76, 175, 80, 0.8);
+    }
+
+    #feedback {
+      margin-top: 20px;
+      font-size: 20px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    #badge {
+      margin-top: 30px;
+      font-size: 24px;
+      color: #ff8c00;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px #000;
+    }
+  
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #e6f2ff;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .labels {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .label {
+      width: 80px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #ccc;
+      color: white;
+      font-weight: bold;
+    }
+
+    .active {
+      background-color: #4CAF50;
+    }
+
+    #badge {
+      margin-top: 30px;
+      font-size: 24px;
+      color: #ff8c00;
+      font-weight: bold;
+    }
+  
