@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition Tracker | Healthy Living</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="index.html">🥗 Healthy Living</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="tracker.html" class="active">Nutrition Tracker</a>
+        <a href="sign-in.html" class="btn">Sign In</a>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <h1 class="section-title">Nutrition Tracker</h1>
+      <p class="section-sub">Log what you eat and watch your daily totals add up.</p>
+
+      <div class="card tracker-panel">
+        <form id="foodForm">
+          <div class="tracker-form">
+            <div>
+              <label for="food">Food</label>
+              <input id="food" placeholder="Food name" required>
+            </div>
+            <div>
+              <label for="calories">Calories</label>
+              <input id="calories" type="number" min="0" placeholder="0">
+            </div>
+            <div>
+              <label for="protein">Protein (g)</label>
+              <input id="protein" type="number" min="0" placeholder="0">
+            </div>
+            <div>
+              <label for="carbs">Carbs (g)</label>
+              <input id="carbs" type="number" min="0" placeholder="0">
+            </div>
+            <div>
+              <label for="fat">Fat (g)</label>
+              <input id="fat" type="number" min="0" placeholder="0">
+            </div>
+            <button class="btn" type="submit">Add Food</button>
+          </div>
+        </form>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Food</th>
+              <th>Calories</th>
+              <th>Protein</th>
+              <th>Carbs</th>
+              <th>Fat</th>
+            </tr>
+          </thead>
+          <tbody id="foodTable"></tbody>
+        </table>
+
+        <div class="totals">
+          <div class="total-box">
+            <span>Calories</span>
+            <strong id="totalCalories">0</strong>
+          </div>
+          <div class="total-box">
+            <span>Protein</span>
+            <strong id="totalProtein">0g</strong>
+          </div>
+          <div class="total-box">
+            <span>Carbs</span>
+            <strong id="totalCarbs">0g</strong>
+          </div>
+          <div class="total-box">
+            <span>Fat</span>
+            <strong id="totalFat">0g</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <h3>Healthy Living</h3>
+      <p>Helping you stay healthy with workouts, nutrition tracking, and simple recipes.</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="tracker.html">Nutrition Tracker</a>
+        <a href="sign-in.html">Sign In</a>
+      </nav>
+      <p class="copyright">© 2026 Healthy Living | Created for educational purposes</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
